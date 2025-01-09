@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon" />
+    <title>Caféteria</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="caixa-video">
+      <video src="videos/coffe.mp4" loop muted autoplay alt="vide de um cafe"></video>
+      <div class="mascara"></div>
+    </div>
+    
+
+    <header class="cabecalho">
+      <section>
+        <a href="#">
+          <img src="img/logo.png" alt="Logo da cafeteria" />
+        </a>
+
+        <nav>
+          <a href="#">Home</a>
+          <a href="#">Sobre</a>
+          <a href="#">Menu</a>
+          <a href="#" onclick="mostrarModal()">Endereço</a>
+        </nav>
+      </section>
+    </header>
+
+    <section class="caixa-principal">
+      <div>
+        <h3>Code com o Melhor café da Região</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum
+          consectetur eos quisquam unde ullam, ea nobis, fugiat laborum
+          laboriosam rem obcaecati rerum inventore perspiciatis! Eius nostrum
+          est odit impedit esse!
+        </p>
+        <a href="#" class="botao-link">Pegue o seu agora</a>
+      </div>
+    </section>
+
+    <section class="caixa-sobre">
+      <h2 class="titulo"><span>Sobre</span> Nós</h2>
+      <div class="sobre-container">
+        <div class="sobre-imagem">
+          <img src="img/about-img.jpeg" alt="Imagem de uma café preto" />
+        </div>
+        <div class="sobre-texto">
+          <h3>O que faz nosso café especial</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae
+            dolorum ratione illo culpa maiores reiciendis rem ullam unde,
+            cupiditate quidem perspiciatis illum maxime provident. Aspernatur
+            repellendus cum alias pariatur minus!
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque,
+            aut numquam? Delectus assumenda nemo ducimus modi. In asperiores
+            fuga dolores saepe sit, est rem. Praesentium quas dignissimos a
+            repellendus aliquid.
+          </p>
+          <a href="#" class="botao-link">Saiba Mais!</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="modal" >
+      <h3 class="titulo"><span>Nosso</span> Endereço</h3>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15544.941735719925!2d-55.92323537835694!3d-13.084260075863417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93a0f3b985813df7%3A0x4357c81dd6ce4600!2sCoffee%20%26%20Business!5e0!3m2!1spt-BR!2sbr!4v1735170020941!5m2!1spt-BR!2sbr"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        frameborder="0"
+      ></iframe>
+    </div>
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
